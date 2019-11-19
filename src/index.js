@@ -1,13 +1,11 @@
 import { h, Component } from './base';
 import 'normalize.css';
 
-import { Carousel, Tab, RecommendList } from './components';
+import { Tab } from './components';
 import './index.scss';
-import Scroll from './components/scroll';
 import RecommendView from './pages/recommend';
 import FunShopView from './pages/fun-shop';
 import NewShopView from './pages/new-shop';
-import FindView from './pages/find';
 
 const app = (
   <div className="good-shop">
@@ -20,7 +18,7 @@ const app = (
       <RecommendView title="推荐" />
       <FunShopView title="有趣的店" />
       <NewShopView title="品牌新店" />
-      <FindView title="发现" />
+      {/*<FindView title="发现" />*/}
     </Tab>
   </div>
 );

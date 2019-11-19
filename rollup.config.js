@@ -9,7 +9,7 @@ import { terser } from 'rollup-plugin-terser';
 
 const isProd = process.env.NODE_ENV === 'production';
 const config = {
-  input: './src/index.js',
+  input: './src/observer/index.js',
   output: {
     file: 'dist/index.js',
     name: 'index',
